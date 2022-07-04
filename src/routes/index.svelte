@@ -23,14 +23,14 @@
               class="h-24 w-24 rounded-full ring-gray-900 ring-opacity-30 ring-4"
             />
             <div>
-              <h1 class="sm:whitespace-nowrap inline font-bold bg-gradient-to-r from-cyan-300 via-sky-400 to-cyan-200 bg-clip-text font-display text-4xl sm:text-5xl text-transparent">
+              <h1 class="leading-10 sm:whitespace-nowrap inline font-bold bg-gradient-to-r from-cyan-300 via-sky-400 to-cyan-200 bg-clip-text font-display text-4xl sm:text-5xl text-transparent">
                 Mannie Schumpert
               </h1>
-              <h2 class="text-white text-opacity-75 font-semibold text-2xl">Full-Stack JavaScript Engineer</h2>
+              <h2 class="text-white text-opacity-75 font-semibold text-2xl leading-8 py-1">Full-Stack JavaScript Engineer</h2>
             </div>
           </div>
           <div>
-            <p class="mt-6 tracking-tight text-slate-300 text-md max-w-prose">
+            <p class="mt-4 tracking-tight text-slate-300 text-md max-w-prose">
               I started dabbling on the web way back in 2000 😱, then took the leap into full-time web development in 2012. Since 2016 I've been focused on building web applications with JavaScript. 
               I love bringing technical order and approachable UX to complex architectural problems using Lean methodologies.
             </p>
