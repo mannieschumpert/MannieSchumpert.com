@@ -16,14 +16,14 @@
       <div class="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8 xl:px-12 lg:flex space-y-4 lg:space-y-0 lg:space-x-2 items-start justify-between">
         <!-- INTRO -->
         <div class="relative z-10 lg:text-left">
-          <div class="flex space-x-4 items-center">
+          <div class="sm:flex sm:space-x-4 items-center">
             <img 
               src="https://res.cloudinary.com/dbahcfw5c/image/upload/v1656886916/website/mannie-schumpert-headshot.jpg" 
               alt="Mannie Schumpert headshot"
               class="h-24 w-24 rounded-full ring-gray-900 ring-opacity-30 ring-4"
             />
             <div>
-              <h1 class="sm:whitespace-nowrap inline font-bold bg-gradient-to-r from-cyan-300 via-sky-400 to-cyan-200 bg-clip-text font-display text-5xl text-transparent">
+              <h1 class="sm:whitespace-nowrap inline font-bold bg-gradient-to-r from-cyan-300 via-sky-400 to-cyan-200 bg-clip-text font-display text-4xl sm:text-5xl text-transparent">
                 Mannie Schumpert
               </h1>
               <h2 class="text-white text-opacity-75 font-semibold text-2xl">Full-Stack JavaScript Engineer</h2>
