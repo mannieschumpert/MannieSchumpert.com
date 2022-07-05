@@ -1,5 +1,6 @@
 <script>
-  import Social from "../components/social.svelte";
+  import Social from '$components/home/social.svelte';
+  import LatestItem from '$components/watchlist/latest.svelte';
 </script>
 
 <div
@@ -13,7 +14,7 @@
     />
     <div class="absolute inset-0 backdrop-blur-sm bg-gray-800/70" />
     <div class="py-8 sm:py-12 relative sm:px-2 lg:relative lg:py-16 lg:px-0">
-      <div class="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8 xl:px-12 lg:flex space-y-4 lg:space-y-0 lg:space-x-2 items-start justify-between">
+      <div class="mx-auto max-w-2xl px-4 lg:max-w-6xl lg:px-8 xl:px-12 lg:flex space-y-4 lg:space-y-0 lg:space-x-2 items-start justify-between">
         <!-- INTRO -->
         <div class="relative z-10 lg:text-left">
           <div class="sm:flex sm:space-x-4 items-center">
@@ -42,6 +43,7 @@
   </div>
 </div>
 
-<div class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 px-4 lg:max-w-7xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
+<div class="mx-auto max-w-2xl lg:max-w-6xl lg:px-8 xl:px-12">
   <div class="text-md text-gray-500 my-20">⏳ <span class="italic">Currently building a new site as of July 3rd, 2022...</span></div>
+  <LatestItem />
 </div>

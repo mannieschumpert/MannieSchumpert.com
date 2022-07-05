@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-netlify';
 import preprocess from 'svelte-preprocess';
+import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -21,7 +22,16 @@ const config = {
       // instead of creating a single one for the entire app.
       // if `edge` is true, this option cannot be used
       split: false
-    })
+    }),
+    vite: {
+      resolve: {
+        alias: {
+          $components: path.resolve('./src/lib/components'),
+          $lib: path.resolve('./src/lib'),
+          $stores: path.resolve('./src/stores'),
+        },
+      },
+    },
 	}
 };
 
