@@ -4,6 +4,6 @@
 </script>
 
 <div>
-  <h1 class="mb-4">👀 The latest item on my <a href="https://mannieschumpert.com/watchlist" class="font-bold text-sky-600">Tech Watchlist</a>:</h1>
+  <h1 class="mb-4">👀 The latest item on my <a href="/watchlist" class="font-bold text-sky-600">Tech Watchlist</a>:</h1>
   <Item {item} />
 </div>
