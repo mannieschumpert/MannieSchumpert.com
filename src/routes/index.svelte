@@ -1,7 +1,35 @@
-<script>
-  import Social from '$components/home/social.svelte';
-  import LatestItem from '$components/watchlist/latest.svelte';
+<script context="module">
+  import Head from '$lib/components/shared/head.svelte'
+  import Social from '$components/home/social.svelte'
+  import Container from '$lib/components/shared/container.svelte'
+  import LatestItem from '$components/watchlist/latest.svelte'
+  import { client } from '$lib/graphql-client'
+  import { latestWatchListItemQuery } from '$lib/graphql-queries'
+  // import {
+  //   fetchLatestWatchlistItem,
+  // } from '$stores/site-data'
+
+  export const load = async () => {
+    // await fetchLatestWatchlistItem()
+    const result = await client.request(latestWatchListItemQuery)
+    const latest = result.watchListItems ? result.watchListItems[0] : {}
+    console.log(result.watchListItems[0])
+    return {
+      props: {
+        latest,
+      },
+    }
+  }
 </script>
+
+<script>
+  export let latest = {}
+</script>
+
+<Head
+  title="Mannie Schumpert - Full-Stack Javascript Engineer"
+  description="A little peak into what I do"
+/>
 
 <div
   class="overflow-hidden relative bg-slate-900 dark:-mb-32 dark:-mt-[4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:-mt-[4.75rem] dark:lg:pt-[4.75rem]"
@@ -43,7 +71,7 @@
   </div>
 </div>
 
-<div class="mx-auto max-w-2xl lg:max-w-6xl lg:px-8 xl:px-12">
-  <div class="text-md text-gray-500 my-20">⏳ <span class="italic">Currently building a new site as of July 3rd, 2022...</span></div>
-  <LatestItem />
-</div>
+<Container>
+  <div class="text-md text-gray-500 my-20">⏳ <span class="italic">Currently building this new site as of July 3rd, 2022...</span></div>
+  <LatestItem item={latest} />
+</Container>

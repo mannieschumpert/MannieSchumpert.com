@@ -12,7 +12,10 @@
 		"paths": {
       "$lib": ["src/lib"],
       "$lib/*": ["src/lib/*"],
+      "$components": ["src/lib/components"],
       "$components/*": ["src/lib/components/*"],
+      "$stores": ["src/stores"],
+      "$stores/*": ["src/stores/*"],
     }
 	}
 }
